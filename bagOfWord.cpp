@@ -1,7 +1,6 @@
 #include <iostream>
 #include <vector>
 #include <string>
-#include "ContextWords.hpp"
 #include "WordVector.hpp"
 
 int main(int count, char *args[]){
@@ -39,18 +38,25 @@ int main(int count, char *args[]){
   }
 
   //Context Creation
-  ContextWords test0( paraFileName );
+
+  std::vector< class ContextWords * > test;
+  for( auto &elem : paraFileName ){
+    class ContextWords *temp = new ContextWords( elem );
+    test.push_back( temp );
+  }
+  /*
   test0.printContextDetails(1);
   std::cout << std::endl << std::endl << "The Informative words are ------------ " << std::endl;
   test0.findInformativeWord();
   test0.printInformativeContextDetails(1);
-
+  */
   int windowSize;
   std::cout << std::endl << "Enter windows Size : - " << std::endl;
   std::cin >> windowSize;
 
-  WordVector wordVec( test0 );
+  WordVector wordVec( test );
   wordVec.inputFill( windowSize );
+  wordVec.computeSVD();
 
   return 0;
 
