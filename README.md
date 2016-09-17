@@ -6,24 +6,24 @@ These is a Simple Study purpose project of Text Analysis and ML. It has a simple
 *The Concept I learn till now:*
 
 __Task 1 --__
->Word extraction
->Stemming
->Word to Vector (Initial Part)
+* Word extraction
+* Stemming
+* Word to Vector (Initial Part)
 
 
 
 __Task 2 --__
->Implement the SVD algorithm
->Add the important part of the project. The Single Value Decomposition of the word co-occurrence matrix.
-I think their might be pseudo relations because of not removing stopwords, I considered stopwords which are in NLTK kit.
+* Implement the SVD algorithm  
+* Add the important part of the project. The Single Value Decomposition of the word co-occurrence matrix.
+* think their might be pseudo relations because of not removing stopwords, I considered stopwords which are in NLTK kit.
 
 *Next Task are*
 
->Create a CBOW and Skip-gram Algorithm
->Implement Word to Vector using SVD in CBOW and Skip-gram algorithm
+* Create a CBOW and Skip-gram Algorithm
+* Implement Word to Vector using SVD in CBOW and Skip-gram algorithm
 
-*Future Vision :-*
+* Future Vision :-*
 
-> As the main notion of these study generate a graphical representation from unstructured text between real word Entity.
-> For graphical view use D3.js with JSON conversion of my C++ API
-> Create a site, a portal, which upload a text file from user and generate Graphical representation on the website.
+* As the main notion of these study generate a graphical representation from unstructured text between real word Entity.
+* For graphical view use D3.js with JSON conversion of my C++ API
+* Create a site, a portal, which upload a text file from user and generate Graphical representation on the website.
